@@ -1,29 +1,31 @@
 #include "main.h"
 
 /**
- * print_sign - return 0 letter not lowercase, 1 letter lowercase
- *
- *@n: the int to print
- * Return: Always 0.
+ * print_sign - Check Holberton
+ * @n: An input number
+ * Description: Tohis function prints the sign of the number
+ * Return: 1 if number is positive, o if number is 0, or
+ * -1 if number is negative
  */
 int print_sign(int n)
 {
-if (n > 0)
-{
-_putchar ('+');
-return (1);
-}
+	int value;
 
-else if (n == 0)
-{
-_putchar ('0');
-return (0);
-}
+	if (n > 0)
+	{
+		value = 1;
+		_putchar('+');
+	}
+	else if (n == 0)
+	{
+		value = 0;
+		_putchar('0');
+	}
+	else
+	{
+		value = -1;
+		_putchar('-');
+	}
 
-else
-{
-_putchar ('-');
-return (-1);
-}
-
+	return (value);
 }

@@ -1,5 +1,4 @@
-#include "holberton.h"
-
+#include "main.h"
 /**
  * leet - Entry point
  * ONE if, TWO loops only...

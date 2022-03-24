@@ -1,25 +1,24 @@
 #include <stdio.h>
 /**
- * main - entry point
- *
- * Return: Always 0 (success/correct)
+ * main - main block
+ * Description: Print all numbers of base64 in lowercase.
+ * You can only use `putchar`, and only 3 times.
+ * Return: 0
  */
 int main(void)
-
 {
-char base_16;
+	char c;
+	int i;
 
-for (base_16 = 48; base_16 <= 57; base_16++)
-{putchar(base_16);
-}
+	for (i = 0; i < 10; i++)
+	{
+		putchar(i + '0');
+	}
+	for (c = 'a'; c < 'g'; c++)
+	{
+		putchar(c);
+	}
+	putchar('\n');
 
-for (base_16 = 97 ; base_16 <= 102; base_16++)
-{
-putchar(base_16);
-}
-
-putchar ('\n');
-
-return (0);
-
+	return (0);
 }

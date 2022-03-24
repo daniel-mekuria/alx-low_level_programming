@@ -1,46 +1,29 @@
 #include <stdio.h>
-/**
- * main - entry point
- *
- * Return: void
- */
 
+/**
+ * main - prints the numbers from 1 to 100 followed by a new line
+ * for multiples of 3 print Fizz
+ * for multiples of 5 print Buzz
+ * for multipes of 3 and 5 print FizzBuzz
+ *
+ * Return: returns 0
+ */
 int main(void)
 {
-
-int p = 100;
 int i;
 
-i = 1;
-while (i <= p)
+for (i = 1; i <= 100; i++)
 {
-if (i % 3 == 0 && i % 5 == 0)
-{
-printf("FizzBuzz ");
-}
-
+if (i % 5 == 0 && i % 3 == 0)
+printf("%s", "FizzBuzz");
 else if (i % 3 == 0)
-{
-printf("Fizz ");
-}
-
+printf("%s", "Fizz");
 else if (i % 5 == 0)
-{
-if (i < p)
-printf("Buzz ");
-
+printf("%s", "Buzz");
 else
-printf("Buzz");
-}
-
-else
-{
-printf("%i ", i);
-}
-
-i++;
-
-
+printf("%d", i);
+if (i != 100)
+printf(" ");
 }
 printf("\n");
 return (0);

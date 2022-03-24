@@ -1,1 +1,2 @@
-My readme file for 0x00-hello_world
+This directory contains my first project on C-programming.
+Hello World
